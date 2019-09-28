@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+        
+<head>
+<title>grade calculator</title>
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+       <div id = "bg1">
+    
+        <div id ="bg2">
+            <br>
+            <h2 id = "grading">Grade Calculator</h2>
+            <div id = "bg3"> 
+               <form>
+                   <br>
+                   <h3 id ="active"><strong>Activities</strong></h3>
+                    <p id="line">Give Grades to the numeric actiivities :</p>
+        
+                   
+                    <table >
+                            <tr>
+                                    <th>Name</th>
+                                    <th>Short Name</th>
+                                    <th>Weight</th>
+                                    <th>Grade</th>
+                                    <th>Percent</th>
+                            </tr>
+                           
+                            <tr>
+                                
+                                <td>Activity 1</td>
+                                <td>A1</td>
+                                <td> <input type = "number" id='weight1'  placeholder="Enter Weight"  ></td>
+                                <td ><input type = "number" id='num1' oninput="A1()" placeholder="Marks Obtained"  >/
+                                     <input type = "number" id='den1' oninput="A2()" placeholder="Total marks" ></td>
+                                <td id='act1'></td>
+                            </tr>
+                            
+                            <tr>
+                                    <td>Activity 2</td>
+                                    <td>A2</td>
+                                    <td><input type = "number" id='weight2' placeholder="Enter Weight"></td>
+                                    <td><input type = "number" id='num2' oninput="B1()" placeholder="Marks Obtained">/
+                                        <input type = "number" id='den2' oninput="B2()" placeholder="Total Marks"></td>
+                                   <td id="act2"></td>
+                                </tr>
+                                <tr>
+                                        <td>Activity 3</td>
+                                        <td>A3</td>
+                                        <td><input type = "number" id='weight3' placeholder="Enter Weight"></td>
+                                        <td><input type = "number" id='num3' oninput="C1()" placeholder="Marks Obtained" >/
+                                            <input type = "number" ID='den3' oninput="C2()" placeholder="Total Marks"></td>
+                                         <td id="act3"></td>
+                                    </tr>
+                                    <tr>
+                                            <td>Activity 4</td>
+                                        <td>A4</td>
+                                        <td><input type = "number" id='weight4' placeholder="Enter Weight"></td>
+                                        <td><input type = "number" id='num4' oninput='D1()' placeholder="Marks Obtained">/
+                                            <input type = "number" id='den4' oninput='D2()' placeholder="Total Marks"></td>
+                                         <td id="act4"></td>
+                                    </tr>
+                                    
+                            
+                        </table>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <h3 id="res"><strong>Result</strong></h3>
+                        <div id="ans">Answer form in ratio</div>
+                        
+                        <button id="weight" type="button" onclick='weightCal()'>WEIGHTED</button>
+                        <button id="mean" type="button" onclick='meanCalculator()'>MEAN</button>
+                        </form>
+
+                    
+            </div>
+            <br>
+            
+
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+   
+</body>
+
+
+
+</html>
